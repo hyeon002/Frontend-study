@@ -1,0 +1,3 @@
+a_introduce.txt
+: .txt 확장자의 경우 텍스트 파일을 생성
+
