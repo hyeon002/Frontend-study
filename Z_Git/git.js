@@ -31,8 +31,8 @@
     git config --global user.email 깃허브이메일
   
   ? 설정 확인
-    git config ==global user.name
-    git config ==global user.email
+    git config --global user.name
+    git config --global user.email
 
 git의 구조 (사진?)
 
@@ -107,8 +107,33 @@ git remote add origin https://github.com/hyeon002/Frontend-study.git
 git push -u origin main) > shift+Ins 키로 붙여넣기 > sign in with your browser > authorize git-ecosystem > 비밀번호 작성 > ITPS@DESKTOP-NUOPUIF MINGW64 /c/fronted-1223-hhj-git (main) 인지 확인 > README 업로드 됐는지 확인
 
   ! 연동된 저장소에 새로운 파일 추가 
+  1. 변경된 사항 확인
+    git status
+  
+  2. workspace에서 remote repository 까지 파일 업로드
+    git add .
+    git commit -m "20240128 hhj"
+    git push origin main
+
+git add .
+git commit -m "20240203 hhj"
+git push origin main
 
     ? 리모트 저장소 추가
-      : 작업하는 환경(workspace)과 원격 리포지토리를 연결
+    + 새로운 폴더 생성 > open git bash ~ 클릭 > git init
+
+    새롭게 작업할 로컬환경에서 새폴더에 git bash 열기
+    1. git 초기화
+      git init
+
+    2. 브랜치 이름 변경
+      git branch -M main
+
+    3. 작업하는 환경(workspace)과 원격 리포지토리를 연결
       : git remote add origin 리모트저장소URL
+      git remote add origin https://github.com/hyeon002/Frontend-study.git
+    + github > Code 클릭 > HTTPS > 복사 버튼 클릭
+
+    4. 원격 리포지토리의 내용을 받아오기
+      git pull origin main
 */
