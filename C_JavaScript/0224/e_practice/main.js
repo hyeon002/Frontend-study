@@ -1,0 +1,1 @@
+const options = ['옵션 A', '옵션 B', '옵션 C', '옵션 D']
